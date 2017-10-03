@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/route/index.js"],"names":["router"],"mappings":";;;;;;AAAA;;;;AACA;;;;;;AACA;;AAEA;;AAEA,IAAIA,SAAS,wBAAb;;kBAEeA,M","file":"index.js","sourcesContent":["import express from \"express\";\nimport config from \"../config\";\n// import initialize DB from \n\n// import middlware from\n\nlet router = express();\n\nexport default router;"]}

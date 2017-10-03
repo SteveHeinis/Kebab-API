@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/db.js"],"names":["db","connect","callback"],"mappings":";;;;;;AAAA;;;;;;kBAEe,oBAAY;AAC1B,KAAIA,KAAK,mBAASC,OAAT,CAAiB,kCAAjB,CAAT;AACAC,UAASF,EAAT;AACA,C","file":"db.js","sourcesContent":["import mongoose from \"mongoose\";\n\nexport default callback => {\n\tlet db = mongoose.connect(\"mongodb//localhost27017/chezmomo\");\n\tcallback(db);\n}\n"]}
