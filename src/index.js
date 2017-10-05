@@ -8,19 +8,16 @@ import routes from "./routes";
 let app = express();
 app.server = http.createServer(app);
 
-// Middleware 
+app.use(bodyparser.json({
+	limit : config.bodyLimit
 
-// Passport Config
-
-// API route V1
+	}));
 
 app.use("/v1", routes); 
 
-// ROUTE ICI -> 
-
 app.server.listen(config.port);
 
-console.log("started import ${app.server.address().port}");
+console.log(`started on port ${app.server.address().port}`);
 
 export default app;
 
